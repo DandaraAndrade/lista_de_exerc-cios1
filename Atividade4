@@ -1,0 +1,3 @@
+Número_real = float (input("Dígite um número:"))
+Quadrado = Número_real * Número_real 
+print (f'O resultado fínal é {Quadrado}')

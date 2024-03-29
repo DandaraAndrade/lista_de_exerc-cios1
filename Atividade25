@@ -1,0 +1,6 @@
+A = float(input("Dígite o valor da altura de um cílindro: "))
+R = float(input("Dígite o valor do raio: "))
+
+V = 3.141592 * (R*R)
+
+print(f"O volume do cílindro circular correponde á {V}")

@@ -1,0 +1,9 @@
+N1 = float(input("Dígite o primeiro número:"))
+N2 = float(input("Dígite o segundo número:"))
+N3 = float(input("Dígite o terceiro número:"))
+N4 = float(input("Dígite o quarto número:"))
+
+S = N1 + N2 + N3 + N4 
+R = S/4 
+
+print(f'O resultado final é {R}')

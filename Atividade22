@@ -1,0 +1,4 @@
+L = float(input ("Dígite um número:"))
+A = L * L 
+
+print(f'A área do quadrado corresponde á {A}')

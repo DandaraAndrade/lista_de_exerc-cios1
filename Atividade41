@@ -1,0 +1,24 @@
+def ler_dimensoes_terreno():
+    while True:
+        try:
+            comprimento = float(input("Digite o comprimento do terreno em metros: "))
+            largura = float(input("Digite a largura do terreno em metros: "))
+            return comprimento, largura
+        except ValueError:
+            print("Por favor, digite valores numéricos válidos.")
+def ler_preco_tela():
+    while True:
+        try:
+            preco = float(input("Digite o preço do metro de tela em reais: "))
+            return preco
+        except ValueError:
+            print("Por favor, digite um valor numérico válido.")
+
+def calcular_custo_cerca(comprimento, largura, preco_tela):
+    perimetro = 2 * (comprimento + largura)
+    custo_cerca = perimetro * preco_tela
+    return custo_cerca 
+comprimento, largura = ler_dimensoes_terreno()
+preco_tela = ler_preco_tela()
+custo_cerca = calcular_custo_cerca(comprimento, largura, preco_tela)
+print(f"O custo para cercar o terreno com tela é de R$ {custo_cerca:.2f}")

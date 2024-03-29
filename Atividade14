@@ -1,0 +1,3 @@
+G = float (input("Dígite o valor do ângulo em graus:"))
+R = G * 3.14/180
+print(f"O valor {G} em graus, convertido em radianos é de {R}")

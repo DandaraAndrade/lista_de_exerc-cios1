@@ -1,0 +1,10 @@
+VT = float(input("Dígite o valor: R$ "))
+D1 = VT * 10/ 100
+D2 = VT - D1
+print(f"O valor com desconto de 10% corresponde á {D2}")
+
+P = VT / 3 
+print(f"O valor de cada parcela sem juros corresponde á {P}")
+
+C = VT * 5/100
+print(f"O valor da porcentagem do vendedor corresponde á {C}")

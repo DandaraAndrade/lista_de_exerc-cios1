@@ -1,0 +1,37 @@
+def calcular_conta_final(quantidades):
+    precos = {'a': 3.00, 'b': 2.50, 'c': 2.50, 'd': 1.00, 'e': 3.00}
+    total_conta = 0
+    
+    for item, quantidade in quantidades.items():
+        if item in precos:
+            total_conta += precos[item] * quantidade
+        else:
+            print(f"Item '{item}' não reconhecido.")
+    
+    return total_conta
+def ler_quantidades():
+    quantidades = {}
+    while True:
+        try:
+            print("Menu:")
+            print("a. Hambúrguer................. R$ 3,00")
+            print("b. Cheeseburger.............. R$ 2,50")
+            print("c. Fritas............................ R$ 2,50")
+            print("d. Refrigerante ................. R$ 1,00")
+            print("e. Milkshake..................... R$ 3,00")
+            
+            opcao = input("Digite o item consumido (ou 'f' para finalizar): ").lower()
+            if opcao == 'f':
+                break
+            
+            quantidade = int(input("Digite a quantidade consumida: "))
+            
+            quantidades[opcao] = quantidade
+        except ValueError:
+            print("Por favor, digite uma quantidade válida.")
+    
+    return quantidades
+
+quantidades = ler_quantidades()
+total_conta = calcular_conta_final(quantidades)
+print(f"O total da conta é: R$ {total_conta:.2f}")

@@ -1,0 +1,6 @@
+Número = float (input("Dígite um número:"))
+antecessor= Número-1
+sucessor= Número+1
+print ('O valor do antecessor: ' + repr (antecessor))
+print ('O valor do sucessor: ' + repr (sucessor))
+print(F"O antecessor de {Número} corresponde á {antecessor}, e seu sucessor á {sucessor}")

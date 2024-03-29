@@ -1,0 +1,18 @@
+def calcular_ano_nascimento(idade, ano_atual):
+    ano_nascimento = ano_atual - idade
+    return ano_nascimento
+
+def ler_idade_e_ano_atual():
+    while True:
+        try:
+            idade = int(input("Digite a idade da pessoa: "))
+            ano_atual = int(input("Digite o ano atual: "))
+            return idade, ano_atual
+        except ValueError:
+            print("Por favor, digite valores inteiros válidos.")
+
+idade, ano_atual = ler_idade_e_ano_atual()
+
+ano_nascimento = calcular_ano_nascimento(idade, ano_atual)
+
+print(f"A pessoa nasceu aproximadamente no ano de {ano_nascimento}.")

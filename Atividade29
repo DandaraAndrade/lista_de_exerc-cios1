@@ -1,0 +1,10 @@
+D = float(input("Dígite o número de dias trabalhados: "))
+
+B = 30.00 * D 
+
+P = B * 0.11
+VP = B - P 
+I = VP * 0.08
+VF = VP - I 
+
+print(F"O valor líquido correponde á {VF}")

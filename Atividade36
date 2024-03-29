@@ -1,0 +1,19 @@
+def imprimir_digitos(numero):
+    numero_str = str(numero)
+    
+    for digito in numero_str:
+        print(digito)
+
+def ler_numero():
+    while True:
+        numero = int(input("Digite um número inteiro de quatro dígitos (de 1000 a 9999): "))
+        if 1000 <= numero <= 9999:
+            return numero
+        else:
+            print("Por favor, digite um número dentro do intervalo de 1000 a 9999.")
+
+numero = ler_numero()
+
+print("Dígitos do número:")
+imprimir_digitos(numero)
+ 

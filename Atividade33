@@ -1,0 +1,6 @@
+D = float(input("Dígite a altura correspondente ao degrau:"))
+A = float(input("Dígite a altura á qual o usuário deseja alcançar:"))
+
+R = A / D
+
+print(F"{R} degraus é a quantidade necessária para alcançar á altura desejada.")

@@ -1,0 +1,4 @@
+R = float(input("Dígite o valor do raio de um círculo: "))
+A = 3.141592 * (R*R)
+
+print(F"A área do círculo corresponde á {A}")

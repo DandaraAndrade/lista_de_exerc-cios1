@@ -1,0 +1,2 @@
+número = int(input("Digite um número inteiro: "))
+print(f"O número inteiro que você digitou é: {número}") 

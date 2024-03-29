@@ -1,0 +1,37 @@
+def calcular_proporcao_investimento(valor_investido, total_investido):
+    proporcao = valor_investido / total_investido
+    return proporcao
+
+def calcular_premio_amigo(valor_investido, total_investido, premio):
+    proporcao = calcular_proporcao_investimento(valor_investido, total_investido)
+    premio_amigo = proporcao * premio
+    return premio_amigo
+
+def ler_valor_investido(i):
+    while True:
+        try:
+            valor = float(input(f"Digite o valor investido pelo amigo {i+1}: "))
+            return valor
+        except ValueError:
+            print("Por favor, digite um valor numérico válido.")
+
+def ler_valor_premio():
+    while True:
+        try:
+            premio = float(input("Digite o valor do prêmio: "))
+            return premio
+        except ValueError:
+            print("Por favor, digite um valor numérico válido.")
+
+n_amigos = 3
+valores_investidos = [ler_valor_investido(i) for i in range(n_amigos)]
+
+total_investido = sum(valores_investidos)
+
+premio = ler_valor_premio()
+
+premios_amigos = [calcular_premio_amigo(valor, total_investido, premio) for valor in valores_investidos]
+
+print("\nQuantidade que cada amigo ganhará do prêmio:")
+for i, premio_amigo in enumerate(premios_amigos):
+    print(f"Amigo {i+1}: R$ {premio_amigo:.2f}")

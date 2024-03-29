@@ -1,0 +1,9 @@
+S = float(input("Dígite o valor do sálario do funcíonario:"))
+
+aumento = 1.17 / 100
+
+reajuste = S * aumento 
+
+A = S + reajuste 
+
+print(f'O valor do sálario com reajuste corresponde á {A}')

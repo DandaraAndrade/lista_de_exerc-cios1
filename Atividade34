@@ -1,0 +1,12 @@
+def converter_maiuscula_para_minuscula(letra_maiuscula):
+
+    if ord('A') <= ord(letra_maiuscula) <= ord('Z'):
+
+        return chr(ord(letra_maiuscula) + (ord('a') - ord('A')))
+    else:
+    
+        return letra_maiuscula
+
+letra_maiuscula = input("Digite uma letra maiúscula: ")
+letra_minuscula = converter_maiuscula_para_minuscula(letra_maiuscula)
+print(f"A letra {letra_maiuscula} correspondente em minúsculo é: {letra_minuscula}")

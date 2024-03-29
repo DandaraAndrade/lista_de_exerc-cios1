@@ -1,0 +1,9 @@
+valor_total = float(input('Confirme o valor do prêmio em dígitos (R$780000.00): '))
+quantia_primeiro_ganhador = valor_total * 0.46
+quantia_segundo_ganhador = valor_total * 0.32
+quantia_terceiro_ganhador = valor_total - quantia_primeiro_ganhador - quantia_segundo_ganhador
+
+print("Quantia para o primeiro ganhador: R$", quantia_primeiro_ganhador)
+print("Quantia para o segundo ganhador: R$", quantia_segundo_ganhador)
+print("Quantia para o terceiro ganhador: R$", quantia_terceiro_ganhador)
+    

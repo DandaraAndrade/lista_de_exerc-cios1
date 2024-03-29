@@ -1,0 +1,20 @@
+def calcular_custo_consumidor(custo_fabrica):
+    porcentagem_distribuidor = 12 / 100
+    porcentagem_impostos = 45 / 100
+
+    custo_distribuidor = custo_fabrica * porcentagem_distribuidor
+    custo_impostos = custo_fabrica * porcentagem_impostos
+    custo_consumidor = custo_fabrica + custo_distribuidor + custo_impostos
+
+    return custo_consumidor
+def ler_custo_fabrica():
+    while True:
+        try:
+            custo_fabrica = float(input("Digite o custo de fábrica do carro: "))
+            return custo_fabrica
+        except ValueError:
+            print("Por favor, digite um valor numérico válido.")
+
+custo_fabrica = ler_custo_fabrica()
+custo_consumidor = calcular_custo_consumidor(custo_fabrica)
+print(f"O custo ao consumidor do carro é de R$ {custo_consumidor:.2f}")

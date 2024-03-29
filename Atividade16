@@ -1,0 +1,7 @@
+P = float(input("Dígite o primeiro número:"))
+S = float(input("Dígite o segundo número:"))
+T = float(input("Dígite o terceiro número:"))
+
+R = (P*P) + (S*S) + (T*T)
+
+print(f'O resultado final é {R}')

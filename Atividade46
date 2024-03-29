@@ -1,0 +1,11 @@
+#MEDIA = (N1 + (N2 * 2)) / 3
+#(MEDIA * 3) = (N1 + (N2 * 2))
+#(MEDIA * 3) – N1 = N2 * 2
+#((MEDIA * 3) – N1) / 2 = N2
+
+MEDIA = 7
+
+N1 = float(input("Dígite a nota referente á primeira prova: "))
+N2 = ((MEDIA * 3) -  N1)/ 2 
+
+print(f"O aluno precisa de {N2} de nota na segunda prova para obter á aprovação.")

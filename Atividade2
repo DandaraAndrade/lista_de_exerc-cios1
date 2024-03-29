@@ -1,0 +1,2 @@
+número = float(input("Digite um número inteiro: "))
+print(f"O número real que você digitou é: {número}") 

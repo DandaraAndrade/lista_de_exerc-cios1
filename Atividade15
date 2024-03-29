@@ -1,0 +1,5 @@
+L = float (input("Dígite á medida da largura:"))
+C = float (input("Dígite á medida do comprimento:"))
+P = float (input("Dígite á medida da profundidade:"))
+V = L*C*P 
+print(f'O volume da piscina corresponde á {V}')

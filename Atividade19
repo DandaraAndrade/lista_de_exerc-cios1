@@ -1,0 +1,6 @@
+R = float(input("Dígite o valor em real:"))
+D = float (input("Dígite a cotação atual do dolar:"))
+
+C = R / D 
+
+print(f"O valor de {R} reais, convertido ao dolar corresponde á {C}")

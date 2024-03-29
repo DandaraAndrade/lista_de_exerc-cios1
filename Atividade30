@@ -1,0 +1,8 @@
+VH = float(input("Dígite o valor á ser pago por hora trabalhada: R$ "))
+D = float (input("Dígite o número de horas trabalhadas:" ))
+
+S = VH *  D 
+Vl = S * 0.10
+SF = S + Vl 
+
+print(f'O valor á ser recebido corresponde á {SF}')

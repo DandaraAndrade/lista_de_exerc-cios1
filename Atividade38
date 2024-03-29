@@ -1,0 +1,31 @@
+def calcular_termino(hora_inicio, minuto_inicio, segundo_inicio, duracao):
+    total_segundos_inicio = hora_inicio * 3600 + minuto_inicio * 60 + segundo_inicio
+    total_segundos_termino = total_segundos_inicio + duracao
+
+    hora_termino = total_segundos_termino // 3600
+    minutos_restantes = total_segundos_termino % 3600
+    minuto_termino = minutos_restantes // 60
+    segundo_termino = minutos_restantes % 60
+
+    return hora_termino, minuto_termino, segundo_termino
+
+def ler_horario_e_duracao():
+    while True:
+        try:
+            hora_inicio = int(input("Digite a hora de início (0-23): "))
+            minuto_inicio = int(input("Digite o minuto de início (0-59): "))
+            segundo_inicio = int(input("Digite o segundo de início (0-59): "))
+            duracao = int(input("Digite a duração em segundos: "))
+
+            if 0 <= hora_inicio <= 23 and 0 <= minuto_inicio <= 59 and 0 <= segundo_inicio <= 59:
+                return hora_inicio, minuto_inicio, segundo_inicio, duracao
+            else:
+                print("Por favor, digite um horário válido.")
+        except ValueError:
+            print("Por favor, digite valores inteiros válidos.")
+
+hora_inicio, minuto_inicio, segundo_inicio, duracao = ler_horario_e_duracao()
+
+hora_termino, minuto_termino, segundo_termino = calcular_termino(hora_inicio, minuto_inicio, segundo_inicio, duracao)
+
+print(f"Horário de término: {hora_termino:02d}:{minuto_termino:02d}:{segundo_termino:02d}")

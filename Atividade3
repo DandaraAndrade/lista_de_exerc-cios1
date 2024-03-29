@@ -1,0 +1,7 @@
+Número1 = int(input ("Dígite um número:"))
+Número2 = int(input ("Dígite um número:"))
+Número3 = int(input ("Dígite um número:"))
+
+soma = Número1 + Número2 + Número3 
+
+print(f"O resultado corresponde á {soma}")

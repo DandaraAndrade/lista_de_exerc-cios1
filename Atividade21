@@ -1,0 +1,13 @@
+numero_inteiro = int(input("Digite um número inteiro: "))
+
+triplo = numero_inteiro * 3
+
+dobro = numero_inteiro * 2
+
+sucessor_triplo = triplo + 1
+
+antecessor_dobro = dobro - 1
+
+soma = sucessor_triplo + antecessor_dobro
+
+print(f"A soma do sucessor do triplo com o antecessor do dobro correponde á {soma}")
